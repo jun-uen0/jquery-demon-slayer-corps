@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>鬼滅隊予備校</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery.jsの読み込み -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+  <!-- スムーズスクロール部分の記述 -->
+  <script>
+    $(function () {
+      // #で始まるリンクをクリックしたら実行されます
+      $('a[href^="#"]').click(function () {
+        // スクロールの速度
+        let speed = 400; // ミリ秒で記述
+        let href = $(this).attr("href");
+        let target = $(href == "#" || href == "" ? 'html' : href);
+        let position = target.offset().top;
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <!-- ローディング画面 -->
+
+  <div id="loader-bg">
+    <div id="loader">
+      <p>心を燃やせ</p>
+    </div>
+  </div>
+
+  <div id="wrap">
+
+    <div class="layout">
+
+      <!-- こっちが本当のヘッダー (fist) -->
+      <div class="first">
+        <div class="logo">
+          <a href="#"><img src="img/kisatsutai_logo.png" alt="">
+          </a>
+        </div>
+
+
+        <!-- ナビゲーション -->
+        <nav>
+          <ul>
+            <li><a href="#about">鬼殺隊</a></li>
+            <li><a href="#course">訓練</a></li>
+            <li><a href="#news">広報</a></li>
+            <li><a href="#access">本拠地</a></li>
+            <li><a href="#contact">問合</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- 動画 -->
+      <div class="video-wrap">
+        <video src="video/kimetsu-small-size.mov" poster="sample.jpg" autoplay loop muted controls> </video>
+        <div class="video-a">
+          世に蔓延る鬼を殲滅しよう
+        </div>
+        <div class="video-b">
+          鬼殺隊員養成学校「鬼殺隊予備校 東京」
+        </div>
+      </div>
+
+      <iframe src="" frameborder="0"></iframe>
+
+      <div class="fade">
+        <!-- 鬼殺隊について -->
+        <div id="about" class="about">
+
+          <div class="title">
+            鬼殺隊予備校
+          </div>
+
+          <div class="text">
+            <div class="a">
+              鬼殺隊予備校は、鬼殺隊員養成学校です。
+            </div>
+            <div class="b">
+              鬼殺隊とは、鬼を狩る目的で作られた戦国時代から約800年以上の歴史をもつ私設の部隊。（政府非公認）<br>鬼殺隊は産屋敷家により結成されました。
+            </div>
+            <div class="b">
+              隊士に課せられる隊の目的は主に２つ。
+            </div>
+            <div class="c">
+              一、鬼を狩ること 　　　二、鬼を知ること<br>
+            </div>
+            <div class="d">
+              隊士の数は数百名、個々の強さによって階級細かく別れている。<br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 登場人物 -->
+      <div class="fade">
+        <div class="pics">
+          <img src="img/ionsuke.jpg" alt="">
+          <img src="img/tanjiro.jpg" alt="">
+          <img src="img/nezuko.jpg" alt="">
+          <img src="img/zenitsu.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="fade">
+        <!-- 訓練内容 -->
+        <div id="course" class="course">
+          <div class="title">
+            訓練内容
+          </div>
+          <div class="text">
+            鬼狩りの経験がなくとも実際の戦闘で鬼と戦えるよう、訓練は多くの専門家や<br>現役鬼殺隊員の助言のもと、作られました。
+          </div>
+        </div>
+
+      </div>
+
+      <div class="fade">
+        <!-- ボックスたち -->
+        <!-- 最初の列 -->
+        <div class="box1">
+          <div class="pic1">
+            <img src="img/syugyou1.jpg" alt="">
+          </div>
+          <div class="textbox">
+            <div class="title">
+              本格的な武器を使った実地研修
+            </div>
+            <div class="naiyo">
+              最初の訓練は山登りです。道中さまざまな罠が仕掛けられてます。命を落とさず、日の出前までに帰りましょう。
+            </div>
+          </div>
+        </div>
+        <!-- 二番目の列 -->
+        <div class="box2">
+          <div class="textbox">
+            <div class="title">
+              全集中の呼吸を習得しよう
+            </div>
+            <div class="naiyo">
+              次は岩を真っ二つに斬る修行です。<br>全集中の呼吸を駆使しましょう。
+            </div>
+          </div>
+          <div class="pic1">
+            <img src="img/syugyou2.jpg" alt="">
+          </div>
+        </div>
+        <!-- 三番目の箱 -->
+        <div class="box3">
+          <div class="pic3">
+            <img src="img/syugyou3.jpg" alt="">
+          </div>
+          <div class="textbox">
+            <div class="title">
+              鬼隊隊最終戦別に臨もう
+            </div>
+            <div class="naiyou">
+              鬼隊隊に入隊するためには厳しい選別を受ける必要があります。
+              場所は一年中ふもとから中腹にかけて藤の花が咲く「藤襲山（ふじかさねやま）」。<br>
+              鬼は藤の花が苦手で、この山には選別のために閉じ込められた本物の鬼がいます。<br>
+              鬼に喰われることなく夜明けまで生き延びましょう。
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="fade">
+        <!-- 広報 -->
+        <div class="slide-bottom show" style="opacity: 1; transform: translate(0px, 0px);">
+
+          <div id="news" class="news">
+            <div class="title">
+              広報
+            </div>
+            <!-- 三つのニュース -->
+            <div class="images">
+              <!-- 一番目のニュース -->
+              <div class="news1">
+                <a href="https://kimetsu.com/anime/yukakuhen/" target="_blank">
+                  <div class="news-picture1">
+                  </div>
+                  <div class="news-textbox">
+                    <div class="news-textbox-date">
+                      2021年
+                    </div>
+                    <div class="news-textbox-text">
+                      遊郭編TVアニメ化決定！
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 二番目のニュース -->
+              <div class="news2">
+                <a href="https://kimetsu.com/anime/" target="_blank">
+                  <div class="news-picture2">
+                  </div>
+                  <div class="news-textbox">
+                    <div class="news-textbox-date">
+                      2020年
+                    </div>
+                    <div class="news-textbox-text">
+                      無限列車編映画化決定！
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 三番目のニュース -->
+              <div class="news3">
+                <a href="https://kimetsu.com/anime/risshihen/" target="_blank">
+                  <div class="news-picture3">
+                  </div>
+                  <div class="news-textbox">
+                    <div class="news-textbox-date">
+                      2019年
+                    </div>
+                    <div class="news-textbox-text">
+                      鬼滅の刃、アニメ化決定！
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- ボタン -->
+      <div class="more">
+        <a href="https://kimetsu.com/" target="_blank">
+          <div class="more-text">
+            もっと
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="fade">
+      <!-- アクセス -->
+      <div id="access" class="access">
+        <div class="access-title">
+          本拠地
+        </div>
+        <div class="access-nihongo">
+          覚悟はいいですか？
+        </div>
+      </div>
+    </div>
+
+    <!-- 覚悟きまりました？ -->
+    <div class="yesorno">
+      <div class="hidden_box">
+        <label for="label1">はい</label>
+        <input type="checkbox" id="label1" />
+        <div class="hidden_show">
+          <!--非表示ここから-->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.655032244444!2d139.70234011428732!3d35.66936657149889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fa9e2e881%3A0x35396adb5ba7ce03!2sG&#39;s%20ACADEMY%20TOKYO!5e0!3m2!1sen!2sjp!4v1618664239798!5m2!1sen!2sjp"
+              width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <!-- info -->
+          <div class="info">
+            <!-- 名前 -->
+            <div class="name">
+              <div class="info-line">
+                学校名
+              </div>
+              <div class="info-line">
+                校舎所在地
+              </div>
+            </div>
+            <!-- 概要 -->
+            <div class="discription">
+              <div class="info-line">
+                『鬼殺隊予備校 東京』
+              </div>
+              <div class="info-line">
+                <td>東京府南豊島郡原宿村神宮前六の三十五の三 地下一階</td>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fade">
+    <!-- CONTACT -->
+    <div id="contact" class="contact">
+      <div class="contact">
+        <div class="title">
+          問合
+        </div>
+        <div class="text">
+          <!-- <div class="a">
+              説明会お申し込み・お問い合わせ
+            </div> -->
+          <div class="b">
+            ぜひ1度、足を運んでみませんか。説明会は随時開催中。
+            <br>その他、お問い合わせもお気軽にどうぞ。お待ちしております。
+          </div>
+          <div class="c">
+            ※鬼殺隊予備校は実際には存在しません。
+            <br>間違っても問い合わせしないようお願いいたします。
+          </div>
+        </div>
+      </div>
+
+      <!-- オリジナルフォーム -->
+      <div class="form">
+        <div class="first-form-line">
+          <div class="name">名前
+          </div>
+          <div class="input">
+            <input type="text" class="input-box" placeholder="例） 竈門炭治郎">
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="name">カナ
+          </div>
+          <div class="input">
+            <input type="text" class="input-box" placeholder="例）カマドタンジロウ">
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="name">メールアドレス
+          </div>
+          <div class="input">
+            <input type="text" class="input-box" placeholder="例）nise@kisatsutai.tokyo ">
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="name">
+            <div class="form-line-box">
+              鬼殺隊予備校を知ったきっかけ
+            </div>
+          </div>
+          <div class="input">
+            <div class="pull-down">
+              <select name="example">
+                <option value="サンプル1">鬼狩りの噂を聞いて</option>
+                <option value="サンプル2">紹介で</option>
+                <option value="サンプル3">冨岡義勇の紹介で</option>
+                <option value="サンプル4">たまたま通りかかった</option>
+                <option value="サンプル4">その他</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-line">
+          <div class="bigname">
+            <div class="form-line-box">
+              志望動機
+            </div>
+          </div>
+          <div class="input">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="test">
+                とにかく鬼を殲滅したい<br>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">
+                日輪刀がほしい<br>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">
+                妹を人間に戻したい<br>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">
+                鬼殺の教養を身につけたい
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="ask">
+          <div class="name">詳細
+          </div>
+          <div class="input">
+            <input type="text" class="ask-box">
+          </div>
+        </div>
+
+        <!-- ボタン -->
+        <div class="send">
+          <div class="send-box">
+            <div class="send-text">
+              送信
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 著作権 -->
+    <div class="copyright">
+      <div class="copyright-text">
+        copyrights 1912 Kisatsutai Yobiko Tokyo All Rights Reserved.
+      </div>
+    </div>
+  </div>
+
+  <a href="#" id="page-top"><i class="blogicon-chevron-up"></i>トップへ戻る</a>
+
+  <!-- 炎 -->
+  <div class="music">
+    <audio controls autoplay src="music/homura.mp3"></audio>
+  </div>
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- スクロールフェードイン -->
+  <script>
+    (window.onload = function () {
+      // フェードイン処理
+      jQuery(window).scroll(function () {
+        jQuery(".fade").each(function () {
+          var winheight = jQuery(window).height();
+          var posi = jQuery(this).offset().top;
+          var scroll = jQuery(window).scrollTop();
+          if (scroll + winheight > posi) {
+            jQuery(this).addClass("fadein");
+          } else {
+            // スクロールで画面上部に戻った際に要素を非表示にしたい場合は、下記の行のコメントを外し有効にしてください。
+            jQuery(this).removeClass("fadein");
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- トップへ戻るボタン -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      //ページトップへのスクロール
+      $('#pagetop').click(function () {
+        //id名#pagetopがクリックされたら、以下の処理を実行
+        $("html,body").animate({ scrollTop: 0 }, "300");
+      });
+      //ページトップの出現
+      $('#pagetop').hide();
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 0) {
+          $('#pagetop').slideDown(600);
+        } else {
+          $('#pagetop').slideUp(600);
+        }
+      });
+      //ホバーイベント
+      $("#pagetop").mouseover(function () {
+        $(this).animate({
+          bottom: "0px"
+        }, 300);
+      });
+      $("#pagetop").mouseout(function () {
+        $(this).animate({
+          bottom: "-60px"
+        }, 300);
+      });
+    });
+  </script>
+
+  <!-- これはなんだ？ -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var h = $(window).height();
+
+      $('#wrap').css('display', 'none');
+      $('#loader-bg ,#loader').height(h).css('display', 'block');
+    });
+
+    //10秒たったら強制的にロード画面を非表示
+    $(function () {
+      setTimeout('stopload()', 2000);
+    });
+    function stopload() {
+      $('#wrap').css('display', 'block');
+      $('#loader-bg').delay(1300).fadeOut(800);
+      $('#loader').delay(800).fadeOut(400);
+    }
+  </script>
+
+  </div>
+  <!-- ローディング後に表示する内容終了 -->
+</body>
+
+</html>
